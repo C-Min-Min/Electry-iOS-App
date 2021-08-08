@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC4ACF2426BF090500446D95 /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4ACF2326BF090500446D95 /* Devices.swift */; };
 		CC4B531526B4352B0076B12B /* ElectryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4B531426B4352B0076B12B /* ElectryApp.swift */; };
 		CC4B531726B4352B0076B12B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4B531626B4352B0076B12B /* ContentView.swift */; };
 		CC4B531926B4352C0076B12B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4B531826B4352C0076B12B /* Assets.xcassets */; };
 		CC4B531C26B4352C0076B12B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4B531B26B4352C0076B12B /* Preview Assets.xcassets */; };
 		CC4B532726B4352C0076B12B /* ElectryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4B532626B4352C0076B12B /* ElectryTests.swift */; };
 		CC4B533226B4352C0076B12B /* ElectryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4B533126B4352C0076B12B /* ElectryUITests.swift */; };
+		CC77FC6626BC5C4E00E06A58 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77FC6526BC5C4E00E06A58 /* CustomTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC4ACF2326BF090500446D95 /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
 		CC4B531126B4352B0076B12B /* Electry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Electry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4B531426B4352B0076B12B /* ElectryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectryApp.swift; sourceTree = "<group>"; };
 		CC4B531626B4352B0076B12B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		CC4B532D26B4352C0076B12B /* ElectryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElectryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4B533126B4352C0076B12B /* ElectryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectryUITests.swift; sourceTree = "<group>"; };
 		CC4B533326B4352C0076B12B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC77FC6526BC5C4E00E06A58 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				CC4B531426B4352B0076B12B /* ElectryApp.swift */,
 				CC4B531626B4352B0076B12B /* ContentView.swift */,
+				CC4ACF2326BF090500446D95 /* Devices.swift */,
+				CC77FC6526BC5C4E00E06A58 /* CustomTabBar.swift */,
 				CC4B531826B4352C0076B12B /* Assets.xcassets */,
 				CC4B531D26B4352C0076B12B /* Info.plist */,
 				CC4B531A26B4352C0076B12B /* Preview Content */,
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC4B531726B4352B0076B12B /* ContentView.swift in Sources */,
+				CC77FC6626BC5C4E00E06A58 /* CustomTabBar.swift in Sources */,
 				CC4B531526B4352B0076B12B /* ElectryApp.swift in Sources */,
+				CC4ACF2426BF090500446D95 /* Devices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
