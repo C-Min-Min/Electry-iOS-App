@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-typealias Devices = [String:Any]
-
 var devices = [
     [
         "dev_id": "1",
@@ -60,122 +58,19 @@ var devices = [
     ],
 ]
 
+var glayout = [
+    GridItem(.flexible(), spacing: 15),
+    GridItem(.flexible())
+]
 
 struct ContentView: View {
-    private var glayout = [
-        GridItem(.flexible(), spacing: 15),
-        GridItem(.flexible())
-    ]
-    
     var body: some View {
         TabView{
-            NavigationView{
-                ScrollView{
-                    LazyVGrid(columns: glayout, spacing: 15){
-                        ForEach(devices, id: \.self){ device in
-                            VStack(alignment: .leading, spacing: 2.5){
-                                Image(systemName: device["image_link"]!)
-                                Spacer()
-                                Text(device["dev_name"]!)
-                                    .font(.system(size: 20))
-                                    .fontWeight(.bold)
-                                Spacer()
-                                Text(device["status"] ?? "Unknown")
-                                    .font(.body)
-                                    .bold()
-                                    
-                            }
-                            .frame(maxWidth: .infinity)
-                            .padding(EdgeInsets(top: 15, leading: 0, bottom: 15, trailing: 0))
-                            .background(
-                                Rectangle().fill(((Color.secondary).opacity(0.2)))
-                            )
-                            .cornerRadius(15)
-
-                        }
-                    }
-                    .padding(15)
-                }
-                .navigationBarTitle("Home")
-            }
-                
-            .font(.system(size: 30, weight: .bold, design: .rounded))
-            .tabItem{
-                Image(systemName: "house.fill")
-                Text("Home")
-            }
-            
-            NavigationView{
-                ScrollView{
-                    LazyVGrid(columns: glayout, spacing: 15){
-                        ForEach(devices, id: \.self){ device in
-                            VStack(alignment: .leading, spacing: 2.5){
-                                Image(systemName: device["image_link"]!)
-                                Spacer()
-                                Text(device["dev_name"]!)
-                                    .font(.system(size: 20))
-                                    .fontWeight(.bold)
-                                Spacer()
-                                Text(device["status"] ?? "Unknown")
-                                    .font(.body)
-                                    .bold()
-                                    
-                            }
-                            .frame(maxWidth: .infinity)
-                            .padding(EdgeInsets(top: 15, leading: 0, bottom: 15, trailing: 0))
-                            .background(
-                                Rectangle().fill(((Color.secondary).opacity(0.2)))
-                            )
-                            .cornerRadius(15)
-
-                        }
-                    }
-                    .padding(15)
-                }
-                .navigationBarTitle("Devices")
-            }
-                .font(.system(size: 30, weight: .bold, design: .rounded))
-                .tabItem{
-                    Image(systemName: "power")
-                    Text("Devices")
-                }
-            
-            NavigationView{
-                Text("")
-                    .navigationBarTitle("Stats")
-            }
-                .font(.system(size: 30, weight: .bold, design: .rounded))
-                .tabItem{
-                    Image(systemName: "list.dash")
-                        .rotationEffect(Angle(degrees: 180))
-                    Text("Stats")
-                }
-            
-            NavigationView{
-                Text("")
-                    .navigationBarTitle("Notifications")
-            }
-                .font(.system(size: 30, weight: .bold, design: .rounded))
-                .tabItem{
-                    Image(systemName: "bell.fill")
-                    Text("Notifications")
-                }
-            
-            NavigationView{
-                List {
-                    Text("Setting1")
-                    Text("Setting2")
-                    Text("Setting3")
-                    Text("Setting4")
-                }
-                    .navigationBarTitle("Settings")
-            }
-                .font(.system(size: 30, weight: .bold, design: .rounded))
-                .tabItem{
-                    Image(systemName: "gear")
-                    Text("Settings")
-                }
-                
+            Home()
+            Devices()
+            Stats()
+            Notifications()
+            Settings()
         }
         .edgesIgnoringSafeArea(.top)
     }
