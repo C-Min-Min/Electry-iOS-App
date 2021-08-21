@@ -16,8 +16,8 @@
 		CC4B531726B4352B0076B12B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4B531626B4352B0076B12B /* ContentView.swift */; };
 		CC4B531926B4352C0076B12B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4B531826B4352C0076B12B /* Assets.xcassets */; };
 		CC4B531C26B4352C0076B12B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4B531B26B4352C0076B12B /* Preview Assets.xcassets */; };
-		CC4B532726B4352C0076B12B /* ElectryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4B532626B4352C0076B12B /* ElectryTests.swift */; };
 		CC4B533226B4352C0076B12B /* ElectryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4B533126B4352C0076B12B /* ElectryUITests.swift */; };
+		CCAFE37926CFCD2F00F52187 /* ElectryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4B532626B4352C0076B12B /* ElectryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -296,7 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC4B532726B4352C0076B12B /* ElectryTests.swift in Sources */,
+				CCAFE37926CFCD2F00F52187 /* ElectryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +450,7 @@
 				DEVELOPMENT_TEAM = J7L52UKRNX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Electry/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,7 +472,7 @@
 				DEVELOPMENT_TEAM = J7L52UKRNX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Electry/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

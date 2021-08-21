@@ -21,30 +21,30 @@ struct Home: View {
                         VStack(alignment: .leading, spacing: 2.5){
                             Image(systemName: device["image_link"]!)
                             Spacer()
-                            Text(device["dev_name"]!)
-                                .font(.system(size: 20))
-                                .fontWeight(.bold)
-                            Spacer()
-                            Text(device["status"] ?? "Unknown")
-                                .font(.body)
-                                .bold()
-                                
+                            VStack(alignment: .leading){
+                                Text(device["dev_name"]!)
+                                    .font(.title2)
+                                    .fontWeight(.bold)
+                                Text(device["status"] ?? "Unknown")
+                                    .font(.subheadline)
+                                    .bold()
+                            }
                         }
-                        .frame(maxWidth: .infinity)
-                        .padding(EdgeInsets(top: 15, leading: 0, bottom: 15, trailing: 0))
+                        .padding(15)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .aspectRatio(1, contentMode: .fill)
                         .background(
                             Rectangle().fill(((Color.secondary).opacity(0.2)))
                         )
-                        .aspectRatio(1, contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                         .cornerRadius(15)
-
+                        
                     }
                 }
                 .padding(15)
             }
             .navigationBarTitle("Home")
         }
-            
+        
         .font(.system(size: 30, weight: .bold, design: .rounded))
         .tabItem{
             Image(systemName: "house.fill")
